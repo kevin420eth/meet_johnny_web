@@ -1,0 +1,21 @@
+header {
+  border: 2px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu {
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.landing_page{
+    border: 2px solid white;
+}
+
+.stripe_pricing{
+    border:2px solid white;
+}
