@@ -1,0 +1,28 @@
+header {
+    height: 3rem;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 10rem;
+    box-shadow: 0 4px 4px -4px rgba(210, 210, 210, 1);
+}
+
+.logo_container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo_image {
+    border-radius: 2rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}

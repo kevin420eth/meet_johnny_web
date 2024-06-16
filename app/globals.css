@@ -4,9 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
-  background-image: linear-gradient(45deg, #1a1a1a, #000000);
+  /* background-image: linear-gradient(45deg, #1a1a1a, #000000);
+  background-image: linear-gradient(45deg, #1a1a1a, #000000); */
+  background-color: #1a1a1a;
 }
 
 a {
@@ -17,4 +23,8 @@ a {
 ul,
 ol {
   list-style-type: none;
+}
+
+p{
+  line-height: 2rem;
 }

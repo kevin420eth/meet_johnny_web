@@ -1,34 +1,23 @@
+
 import './page.css'
+
+import Header from '../header/header'
+import Landing from './landing/landing'
+import Feature from './feature/feature'
+import Pricing from './pricing/pricing'
+import Footer from '../footer/footer'
+
 
 export default function Home() {
     return (
         <>
-            <header>
-                <h1>Meet Johnny</h1>
-                <nav>
-                    <ul className="menu">
-                        <li><a href="/pricing">Pricing</a></li>
-                        <li><a href="https://discord.gg/2dqrWzG6" target="_blank">Community</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <Header />
             <main>
-                <section className='landing_page'>
-                    <div>
-                        this is slide show
-                    </div>
-                    <div>
-                        slogan something
-                    </div>
-                </section>
 
-                <section className='stripe_pricing'>
-                    this is the price
-                </section>
-
-                <section className='introduce'>
-                    this is the introduce
-                </section>
+                <Landing />
+                <Feature />
+                <Pricing />
+                <Footer />
             </main>
         </>
     )

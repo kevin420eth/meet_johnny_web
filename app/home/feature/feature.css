@@ -1,0 +1,54 @@
+.feature_section {}
+
+.meetjohnny_section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 10rem 10rem;
+}
+
+.meetjohnny_section_container {
+    min-width: 50%;
+}
+
+.meetjohnny_section_title {
+    margin-bottom: 2rem;
+}
+
+.meetjohnny_section_content {}
+
+
+.gpt_section {
+    display: flex;
+    padding: 0 10rem 10rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.gpt_logo_container {}
+
+.gpt_introduction_container {
+    width: 50%;
+}
+
+.gpt_introductino_title {
+    margin-bottom: 2rem;
+}
+
+.gpt_introduction_content {}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.gpt_logo_image:hover {
+    animation: rotate 4s linear infinite;
+}
