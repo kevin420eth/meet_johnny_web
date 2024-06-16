@@ -1,0 +1,34 @@
+.footer_section {
+    text-align: center;
+    box-shadow: 0 -5px 0 rgba(210, 210, 210, 1);
+    padding: 2rem 10rem 0;
+}
+
+.information_container{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social_media_list{
+    display: flex;
+    gap:1rem;
+    margin-bottom: 1rem;
+}
+
+.social_media_link{
+    font-size: 2.5rem;
+}
+
+.sixiaohongshu_icon{
+    border:2px solid white;
+    border-radius: 10px;
+    display: flex;
+    padding:0 3px;
+}
+
+.email_information{
+    margin-bottom: 1rem;
+}

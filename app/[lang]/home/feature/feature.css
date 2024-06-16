@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 5rem 10rem 10rem;
+    padding: 0 10rem;
 }
 
 .meetjohnny_section_container {
@@ -18,10 +18,10 @@
 
 .meetjohnny_section_content {}
 
-
 .gpt_section {
+    height: 100vh;
     display: flex;
-    padding: 0 10rem 10rem;
+    padding: 0 10rem;
     justify-content: space-around;
     align-items: center;
 }
