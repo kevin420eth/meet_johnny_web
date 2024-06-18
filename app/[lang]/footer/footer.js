@@ -1,9 +1,9 @@
 import './footer.css'
-import { FaDiscord, FaInstagram, FaFacebookSquare  , FaTiktok } from "react-icons/fa";
+import { FaDiscord, FaInstagram, FaFacebookSquare, FaTiktok } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { SiXiaohongshu } from "react-icons/si";
 
-export default function Footer({dict}) {
+export default function Footer({ dict }) {
     // Create a new Date object
     const currentDate = new Date();
 
@@ -16,11 +16,11 @@ export default function Footer({dict}) {
                 <nav>
                     <ul className='social_media_list'>
                         <li><a href="https://discord.com/invite/qVVFgB9UPy" target='_blank' className="social_media_link"><i><FaDiscord /></i></a></li>
-                        <li><a href="" className="social_media_link"><i><FaInstagram /></i></a></li>
-                        <li><a href="" className="social_media_link"><i><FaFacebookSquare /></i></a></li>
-                        <li><a href="" className="social_media_link"><i><RiTwitterXFill /></i></a></li>
-                        <li><a href="" className="social_media_link"><i><FaTiktok /></i></a></li>
-                        <li><a href="" className="social_media_link"><i className='sixiaohongshu_icon'><SiXiaohongshu /></i></a></li>
+                        <li><a href="https://instagram.com" target='_blank' className="social_media_link"><i><FaInstagram /></i></a></li>
+                        <li><a href="https://facebook.com" className="social_media_link"><i><FaFacebookSquare /></i></a></li>
+                        <li><a href="https://instagram.com" target='_blank' className="social_media_link"><i><RiTwitterXFill /></i></a></li>
+                        <li><a href="https://twitter.com" target='_blank' className="social_media_link"><i><FaTiktok /></i></a></li>
+                        <li><a href="https://xiaohongshu.com/" target='_blank' className="social_media_link"><i className='sixiaohongshu_icon'><SiXiaohongshu /></i></a></li>
                     </ul>
                 </nav>
                 <a className='email_information' href="mailto:support@meetjohnny.com">Email: support@meetjohnny.com</a>
