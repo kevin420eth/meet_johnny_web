@@ -1,6 +1,7 @@
 .stripe_pricing {
     min-height: 100vh;
     padding-top: 2rem;
+    background-color: #262626;
   }
   
   .pricing_table_title {
