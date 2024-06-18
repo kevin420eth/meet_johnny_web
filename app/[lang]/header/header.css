@@ -26,3 +26,58 @@ header {
     justify-content: center;
     gap: 1rem;
 }
+
+.language_menu {
+    position: relative;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem
+}
+
+.selected_language {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.options_menu {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a;
+    top: 37px;
+    border: 2px solid white;
+    border-radius: 5px;
+    /* padding: 1rem 0.5rem */
+}
+
+.language_menu:hover .options_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.language_option {
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+}
+
+.language_option:hover{
+    background-color: rgb(57, 148, 255);
+}
+
+.language_option_link {
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    padding:0.5rem 
+}

@@ -7,6 +7,8 @@ import Feature from './feature/feature'
 import Pricing from './pricing/pricing'
 import Footer from '../footer/footer'
 
+import { redirect } from 'next/navigation'
+
 export default async function Home({ params }) {
     let locale = 'en'
 
