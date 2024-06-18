@@ -1,10 +1,10 @@
 import './header.css'
 import Image from 'next/image'
 import logo from '@/assets/logo.png'
-import us from '@/assets/flag_us.svg'
+import en from '@/assets/flag_en.svg'
 import cn from '@/assets/flag_cn.svg'
-// import tw from '@/assets/flag_tw.svg'
-import tw from '../../../assets/flag_tw.svg'
+import tw from '@/assets/flag_tw.svg'
+
 
 import { FaLongArrowAltDown } from "react-icons/fa";
 
@@ -16,7 +16,7 @@ export default function Header({ dict }) {
     } else if (locale == 'zh-CN') {
         flag = cn
     } else {
-        flag = us
+        flag = en
     }
 
     return (
@@ -43,7 +43,7 @@ export default function Header({ dict }) {
                     {dict.buttons.language} <FaLongArrowAltDown />
                 </div>
                 <ul className='options_menu'>
-                    <li className='language_option'><a href="/en/home" className='language_option_link'><Image src={us} alt='' width={30} />English</a></li>
+                    <li className='language_option'><a href="/en/home" className='language_option_link'><Image src={en} alt='' width={30} />English</a></li>
                     <li className='language_option'><a href="/zh-TW/home" className='language_option_link'><Image src={tw} alt='' width={30} />繁體中文</a></li>
                     <li className='language_option'><a href="/zh-CN/home" className='language_option_link'><Image src={cn} alt='' width={30} />简体中文</a></li>
                 </ul>
