@@ -1,54 +1,78 @@
 .landing_page {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url('../../../../assets/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 0 10rem;
+  border: 2px solid white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../../../../assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 10rem;
+}
+
+.slogan_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.slogan_title {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.highlight_word {
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+.discord_bot_button {
+  background-color: rgb(57, 148, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  gap: 0.5rem
+}
+
+.discord_bot_button:hover {
+  background-color: rgb(0, 118, 255);
+}
+
+/*----------Media Query----------*/
+
+@media screen and (max-width: 1200px){
+}
+
+@media screen and (max-width: 992px){
+  .landing_page{
+    padding:0 2rem;
   }
-  
-  .slogan_container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 8rem;
+}
+
+@media screen and (max-width: 768px){
+  .slogan_title{
+    font-size: 2rem;
+    line-height: 3rem ;
   }
-  
-  .slogan_title {
-    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 576px){
+}
+
+@media screen and (max-width: 480px){
+  .slogan_title{
+    font-size: 1.5rem;
+    line-height: 2rem ;
   }
-  
-  .highlight_word {
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  
-  
-  .discord_bot_button {
-    background-color: rgb(57, 148, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 1rem 2rem;
-    gap: 0.5rem
-  }
-  
-  .discord_bot_button:hover {
-    background-color: rgb(0, 118, 255);
-  }
-  
-  .discord_icon {}
-  
-  
-  .slogan_title {
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-  
-  
+}
+
+@media screen and (max-width: 320px){
+}
