@@ -1,6 +1,5 @@
 import './page.css'
 import { getDictionary } from './dictionaries';
-
 import { redirect } from 'next/navigation'
 
 export default async function Home({ params }) {

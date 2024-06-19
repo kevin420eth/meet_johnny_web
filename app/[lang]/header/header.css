@@ -50,7 +50,6 @@ header {
     top: 37px;
     border: 2px solid white;
     border-radius: 5px;
-    /* padding: 1rem 0.5rem */
 }
 
 .language_menu:hover .options_menu {
@@ -69,15 +68,109 @@ header {
 
 }
 
-.language_option:hover{
+.language_option:hover {
     background-color: rgb(57, 148, 255);
 }
 
 .language_option_link {
     cursor: pointer;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     gap: 5px;
-    padding:0.5rem 
+    padding: 0.5rem
 }
+
+.hamburger_button {
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.bar_active {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.bar_active:last-of-type {
+    transform: rotate(-45deg);
+}
+
+
+
+.mobile_menu_container {
+    position: absolute;
+    left: -200%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile_menu_container_active {
+    left: 0;
+}
+
+.mobile_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+/*----------Media Query----------*/
+
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 2.5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .logo_container {
+        gap: 0.5rem
+    }
+
+    .logo_image {
+        height: 30px;
+        width: 30px;
+    }
+
+    .logo_text {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger_button {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 320px) {}
