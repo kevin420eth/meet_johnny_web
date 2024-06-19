@@ -22,9 +22,9 @@ export default async function Home({ params }) {
   return (
     <>
       <main>
-        <section className="landing_page">
-          <h1>{dict.greeting}</h1>
-          <a href={`/${params.lang}/home`} className="enter_button">{dict.buttons.enter}</a>
+        <section className="landing_page_section">
+          <h1 className="landing_page_title">{dict.greeting}</h1>
+          <a href={`/${params.lang}/home`} className="landing_page_enter_button">{dict.buttons.enter}</a>
         </section>
       </main>
     </>
