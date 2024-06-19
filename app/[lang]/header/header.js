@@ -56,16 +56,16 @@ export default function Header({ dict }) {
             </div>
 
             <div className="hamburger_button" onClick={() => setActive(!active)}>
-                <div className={active?"bar bar_active":"bar"}></div>
-                <div className={active? "":"bar"}></div>
-                <div className={active?"bar bar_active":"bar"}></div>
+                <div className={active ? "bar bar_active" : "bar"}></div>
+                <div className={active ? "" : "bar"}></div>
+                <div className={active ? "bar bar_active" : "bar"}></div>
             </div>
 
             <nav className={active ? "mobile_menu_container mobile_menu_container_active" : "mobile_menu_container"}>
                 <ul className="mobile_menu">
-                    <li><a href="#features">{dict.buttons.features}</a></li>
-                    <li><a href="#pricing">{dict.buttons.pricing}</a></li>
-                    <li><a href="https://discord.gg/qVVFgB9UPy" target="_blank">{dict.buttons.support}</a></li>
+                    <li><a href="#features" onClick={() => setActive(false)}>{dict.buttons.features}</a></li>
+                    <li><a href="#pricing" onClick={() => setActive(false)}>{dict.buttons.pricing}</a></li>
+                    <li><a href="https://discord.gg/qVVFgB9UPy" target="_blank" onClick={() => setActive(false)}>{dict.buttons.support}</a></li>
                 </ul>
             </nav>
 

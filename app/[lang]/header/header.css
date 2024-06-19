@@ -113,7 +113,7 @@ header {
 
 
 .mobile_menu_container {
-    position: absolute;
+    position: fixed;
     left: -200%;
     top: 0;
     background-color: rgba(0, 0, 0, 0.9);
@@ -122,6 +122,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 .mobile_menu_container_active {
@@ -169,7 +170,23 @@ header {
     }
 }
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    .logo_text {
+        font-size: 1rem;
+    }
+
+    .selected_language {
+        font-size: 0.75rem;
+    }
+
+    .language_option_link {
+        font-size: 0.75rem;
+    }
+
+    .options_menu{
+        top:33px
+    }
+}
 
 @media screen and (max-width: 480px) {}
 
