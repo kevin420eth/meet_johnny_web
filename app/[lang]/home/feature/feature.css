@@ -1,11 +1,12 @@
-.feature_section {}
+.feature_section{
+    padding: 0 10rem;
+}
 
 .meetjohnny_section {
     min-height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 10rem;
 }
 
 .meetjohnny_section_container {
@@ -16,12 +17,9 @@
     margin-bottom: 2rem;
 }
 
-.meetjohnny_section_content {}
-
 .gpt_section {
     height: 100vh;
     display: flex;
-    padding: 0 10rem;
     justify-content: space-around;
     align-items: center;
 }
@@ -51,4 +49,50 @@
 
 .gpt_logo_image:hover {
     animation: rotate 4s linear infinite;
+}
+
+/*----------Media Query----------*/
+
+@media screen and (max-width: 1200px){
+    .feature_section{
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .meetjohnny_section_container {
+        width: 50%;
+    }
+
+    .meetjohnny_section_content{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .meetjohnny_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap:2rem;
+        padding-top: 2rem;
+    }
+
+    .meetjohnny_section_container {
+        width: 100%;
+    }
+
+    .meetjohnny_section_title{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px){
+}
+
+@media screen and (max-width: 480px){
+}
+
+@media screen and (max-width: 320px){
 }

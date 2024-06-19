@@ -22,15 +22,15 @@ export default function EmblaCarousel() {
   return (
     <div className="embla" ref={emblaRef}>
       <div className="embla_container">
-        <div className="embla_slide"><Image src={image1} alt='' height={500}/></div>
-        <div className="embla_slide"><Image src={image2} alt='' height={500}/></div>
-        <div className="embla_slide"><Image src={image3} alt='' height={500}/></div>
-        <div className="embla_slide"><Image src={image4} alt='' height={500}/></div>
-        <div className="embla_slide"><Image src={image5} alt='' height={500}/></div>
-        <div className="embla_slide"><Image src={image6} alt='' height={500}/></div>
-        <div className="embla_slide"><Image src={image7} alt='' height={500}/></div>
-        <div className="embla_slide"><Image src={image8} alt='' height={500}/></div>
-        <div className="embla_slide"><Image src={image9} alt='' height={500}/></div>
+        <div className="embla_slide"><Image src={image1} alt='' height={500} className="embla_slide_image"/></div>
+        <div className="embla_slide"><Image src={image2} alt='' height={500} className="embla_slide_image"/></div>
+        <div className="embla_slide"><Image src={image3} alt='' height={500} className="embla_slide_image"/></div>
+        <div className="embla_slide"><Image src={image4} alt='' height={500} className="embla_slide_image"/></div>
+        <div className="embla_slide"><Image src={image5} alt='' height={500} className="embla_slide_image"/></div>
+        <div className="embla_slide"><Image src={image6} alt='' height={500} className="embla_slide_image"/></div>
+        <div className="embla_slide"><Image src={image7} alt='' height={500} className="embla_slide_image"/></div>
+        <div className="embla_slide"><Image src={image8} alt='' height={500} className="embla_slide_image"/></div>
+        <div className="embla_slide"><Image src={image9} alt='' height={500} className="embla_slide_image"/></div>
       </div>
     </div>
   )

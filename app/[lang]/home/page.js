@@ -25,7 +25,7 @@ export default async function Home({ params }) {
             <Header dict={dict} />
             <main>
                 <Landing dict={dict} />
-                {/* <Feature dict={dict} /> */}
+                <Feature dict={dict} />
                 {/* <Pricing dict={dict} />
                 <Footer dict={dict} /> */}
             </main>

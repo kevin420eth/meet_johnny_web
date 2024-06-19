@@ -10,5 +10,34 @@
     flex: 0 0 100%;
     min-width: 0;
     text-align: center;
-    
+
 }
+
+/*----------Media Query----------*/
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {
+    .embla_slide_image {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .embla{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 480px) {
+    .embla_slide_image {
+        width: 240px;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 320px) {}

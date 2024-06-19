@@ -15,7 +15,7 @@ export default function Feature({dict}) {
                 <EmblaCarousel />
             </div>
 
-            <div className='gpt_section'>
+            {/* <div className='gpt_section'>
                 <div className='gpt_logo_container'>
                     <Image src={gptlogo} alt='gpt_logo' width={250} className='gpt_logo_image' />
                 </div>
@@ -23,7 +23,7 @@ export default function Feature({dict}) {
                     <h1 className='gpt_introductino_title'>{dict.gpt_introduction_title}</h1>
                     <p className='gpt_introduction_content'>{dict.gpt_introduction_content}</p>
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }
